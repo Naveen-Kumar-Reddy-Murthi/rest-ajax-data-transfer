@@ -11,7 +11,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
 public class Message {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -48,6 +48,17 @@ public class Message {
 	@Override
 	public String toString() {
 		return "Message [id=" + id + ", message=" + message + ", createdDate=" + createdDate + "]";
+	}
+
+	public Message() {
+		super();
+	}
+
+	public Message(Long id, String message, Date createdDate) {
+		super();
+		this.id = id;
+		this.message = message;
+		this.createdDate = createdDate;
 	}
 	
 	

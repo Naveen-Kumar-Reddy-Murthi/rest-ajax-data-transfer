@@ -49,6 +49,17 @@ public class Password {
 	public String toString() {
 		return "Message [id=" + id + ", password=" + password + ", createdDate=" + createdDate + "]";
 	}
+
+	public Password() {
+		super();
+	}
+
+	public Password(Long id, String password, Date createdDate) {
+		super();
+		this.id = id;
+		this.password = password;
+		this.createdDate = createdDate;
+	}
 	
 	
 

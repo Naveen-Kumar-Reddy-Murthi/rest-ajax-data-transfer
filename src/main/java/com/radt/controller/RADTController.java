@@ -30,7 +30,7 @@ public class RADTController {
 	@Autowired
 	private UserRepository userRepository; 
     
-    @GetMapping(path = "getText/{text}")
+    @GetMapping(path = "getText/{text}" )
     public ResponseEntity<String> getText(@PathVariable String text){
     	
     	 return ResponseEntity.ok(text);
@@ -38,20 +38,22 @@ public class RADTController {
     
     @PostMapping(path = "msg/save")
     public ResponseEntity<String> saveMessage(@RequestBody Message message) {
+    	System.out.println("ins msg/save hadler "+ message);
         Message msg =  messageRepository.save(message);
-        return ResponseEntity.ok(msg.getMessage()+" saved successfully at "+ msg.getCreatedDate().toString());
+        return ResponseEntity.ok("Message Saved Successfully");
     }
 
     @PostMapping(path = "pwd/save")
     public ResponseEntity<String> savePassword(@RequestBody Password password) {
         Password pwd =  passwordRepository.save(password);
-        return ResponseEntity.ok(" Password saved successfully at "+ pwd.getCreatedDate().toString());
+        return ResponseEntity.ok("Password saved successfully");
     }
     
     @PostMapping(path = "user/save")
     public ResponseEntity<Iterable<User>> saveUser(@RequestBody User user) {
     	User usr =  userRepository.save(user);
     	System.out.println(usr + "is saved to db successfully");
+    	System.out.println("findAll returns =>"+userRepository.findAll());
         return ResponseEntity.ok(userRepository.findAll());
     }
 

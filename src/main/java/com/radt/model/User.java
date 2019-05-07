@@ -12,6 +12,22 @@ import org.hibernate.annotations.CreationTimestamp;
 @Entity
 public class User {
 
+	public User() {
+		super();
+	}
+	public User(Long id, String username, String password, String email, String city, String lattitue, String longitude,
+			String temperature, Date creationDate) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.email = email;
+		this.city = city;
+		this.lattitue = lattitue;
+		this.longitude = longitude;
+		this.temperature = temperature;
+		this.creationDate = creationDate;
+	}
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long   id;
