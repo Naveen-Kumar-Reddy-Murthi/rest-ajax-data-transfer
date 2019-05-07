@@ -1,0 +1,12 @@
+INSERT INTO message(message) VALUES('test message -1 ');
+INSERT INTO message(message) VALUES('test message -2 ');
+INSERT INTO message(message) VALUES('test message -3 ');
+INSERT INTO message(message) VALUES('test message -4 ');
+
+
+
+INSERT INTO  user (username, password, email, city, lattitue, longitude, temperature)
+VALUES('Naveen', 'nave1243', 'mn@gmail.com', 'Delhi', '28.7041° N','77.1025° E', '33.5');
+
+INSERT INTO  user (username, password, email, city, lattitue, longitude, temperature)
+VALUES('Test1', 'test123', 'test@gmail.com', 'NewYork', '40.7128° N','74.0060° W', '25.4');
