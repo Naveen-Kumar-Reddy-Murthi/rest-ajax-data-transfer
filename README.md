@@ -3,7 +3,7 @@
 # Frameworks used
   1. Java
   2. Maven
-  3. Spring BOtt
+  3. Spring Boot
   4. H2 Database
   5. AJAX
   6. JQuery
