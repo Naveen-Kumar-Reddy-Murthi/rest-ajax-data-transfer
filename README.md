@@ -13,8 +13,8 @@
    java -jar ".\target\rest-ajax-data-transfer-1.0.jar"
    
 # Available URLs
-   1. https://localhost:8080/message
-   2. https://localhost:8080/user
-   3. https://localhost:8080/password
-   4. https://localhost:8080/h2-console
+   1. https://localhost:8081/message
+   2. https://localhost:8081/user
+   3. https://localhost:8081/password
+   4. https://localhost:8081/h2-console
    
